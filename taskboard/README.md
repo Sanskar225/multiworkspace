@@ -32,13 +32,13 @@ There is no backend to start — `src/api/mockDb.js` is an in-memory "database" 
 
 All use password `demo1234`:
 
-| Email | Belongs to |
-|---|---|
-| `amara@ledger.dev` | Atlas Studio, Northwind Labs, Amara's Sandbox |
-| `devon@ledger.dev` | Atlas Studio |
-| `marco@ledger.dev` | Northwind Labs |
+| Email              | Belongs to                                    |
+| ------------------ | --------------------------------------------- |
+| `amara@ledger.dev` | Atlas Studio, Northwind Labs, amara's Sandbox |
+| `devon@ledger.dev` | Atlas Studio                                  |
+| `marco@ledger.dev` | Northwind Labs                                |
 
-Sign in as **Amara** to see the multi-workspace switcher in action (she's the only seeded user in more than one workspace).
+Sign in as **amara** to see the multi-workspace switcher in action (she's the only seeded user in more than one workspace).
 
 ## A quick tour
 

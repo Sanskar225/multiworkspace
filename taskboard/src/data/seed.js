@@ -2,7 +2,7 @@
 // database is initialized from on first run (see api/mockDb.js).
 
 export const SEED_USERS = [
-  { id: 'u_amara', name: 'Amara Singh', email: 'amara@ledger.dev', password: 'demo1234', color: '#2F6F62', initials: 'AS' },
+  { id: 'u_amara', name: 'amara sinha', email: 'amara@ledger.dev', password: 'demo1234', color: '#2F6F62', initials: 'AS' },
   { id: 'u_devon', name: 'Devon Cole', email: 'devon@ledger.dev', password: 'demo1234', color: '#C9A66B', initials: 'DC' },
   { id: 'u_priya', name: 'Priya Nair', email: 'priya@ledger.dev', password: 'demo1234', color: '#E2703A', initials: 'PN' },
   { id: 'u_marco', name: 'Marco Bell', email: 'marco@ledger.dev', password: 'demo1234', color: '#4F7942', initials: 'MB' }
@@ -11,7 +11,7 @@ export const SEED_USERS = [
 export const SEED_WORKSPACES = [
   { id: 'w_atlas', name: 'Atlas Studio', slug: 'atlas-studio', memberIds: ['u_amara', 'u_devon', 'u_priya'] },
   { id: 'w_northwind', name: 'Northwind Labs', slug: 'northwind-labs', memberIds: ['u_amara', 'u_marco'] },
-  { id: 'w_solo', name: "Amara's Sandbox", slug: 'amara-sandbox', memberIds: ['u_amara'] }
+  { id: 'w_solo', name: "amara's Sandbox", slug: 'amara-sandbox', memberIds: ['u_amara'] }
 ]
 
 export const SEED_BOARDS = [
