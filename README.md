@@ -1,4 +1,6 @@
 # Ledger — Multi-Workspace Task Board
+<img width="1881" height="990" alt="image" src="https://github.com/user-attachments/assets/50ed8296-0d8f-49aa-a4d0-e26c9728d910" />
+
 
 A frontend for a multi-workspace task board: authenticated team boards with drag-and-drop columns, a simulated live activity feed, and publicly shareable read-only board links — built against a fully mocked API layer so it runs standalone with no backend.
 
