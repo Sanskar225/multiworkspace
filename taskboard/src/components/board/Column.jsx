@@ -3,7 +3,7 @@ import { Plus } from 'lucide-react'
 import clsx from 'clsx'
 import TaskCard from './TaskCard'
 
-export default function Column({ column, taskIds, tasksById, membersById, savingTaskIds, onOpenTask, onAddTask }) {
+export default function Column({ column, taskIds, tasksById, membersById, savingTaskIds, dragDisabled, onOpenTask, onAddTask }) {
   return (
     <div className="flex h-full w-72 shrink-0 flex-col rounded-2xl bg-paper-dim/70">
       <div className="flex items-center justify-between px-3.5 pt-3.5 pb-2">
@@ -28,7 +28,7 @@ export default function Column({ column, taskIds, tasksById, membersById, saving
             {...provided.droppableProps}
             className={clsx(
               'flex-1 overflow-y-auto px-2.5 pb-2.5 pt-1 transition-colors',
-              snapshot.isDraggingOver && 'bg-jade-50/60'
+              snapshot.isDraggingOver && 'bg-azure-50/60'
             )}
           >
             {taskIds.length === 0 && !snapshot.isDraggingOver && (
@@ -45,6 +45,7 @@ export default function Column({ column, taskIds, tasksById, membersById, saving
                   assignee={task.assigneeId ? membersById[task.assigneeId] : null}
                   onOpen={onOpenTask}
                   isSaving={savingTaskIds.has(taskId)}
+                  dragDisabled={dragDisabled}
                 />
               )
             })}

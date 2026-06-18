@@ -21,7 +21,7 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#0f1f1b] px-4">
+    <div className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#0a1322] px-4">
       <VantaBackground className="absolute inset-0" />
       <div className="relative z-10">
         <LoginForm />

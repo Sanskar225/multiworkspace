@@ -3,7 +3,7 @@ import clsx from 'clsx'
 const TONES = {
   high: 'bg-ember-100 text-ember-600',
   medium: 'bg-brass-100 text-brass-600',
-  low: 'bg-jade-50 text-jade-600',
+  low: 'bg-azure-50 text-azure-600',
   neutral: 'bg-ink/5 text-ink-soft'
 }
 

@@ -7,6 +7,7 @@ import ErrorState from '../components/common/ErrorState'
 import { useBoardStore } from '../store/boardStore'
 import { useWorkspace, useSyncWorkspaceFromRoute } from '../context/WorkspaceContext'
 import { useAuth } from '../context/AuthContext'
+import { useToast } from '../context/ToastContext'
 import { usePolling } from '../hooks/usePolling'
 import { useDocumentMeta } from '../utils/seo'
 
@@ -17,6 +18,7 @@ export default function BoardPage() {
   const { boardId } = useParams()
   const { token } = useAuth()
   const { currentWorkspace, currentWorkspaceId } = useWorkspace()
+  const toast = useToast()
 
   const {
     boardId: loadedBoardId,
@@ -53,8 +55,14 @@ export default function BoardPage() {
 
   function handleDragEnd({ taskId, sourceColumnId, destColumnId, destIndex }) {
     moveTaskLocal(taskId, sourceColumnId, destColumnId, destIndex)
-    persistReorder(boardId, destColumnId, token)
-    if (sourceColumnId !== destColumnId) persistReorder(boardId, sourceColumnId, token)
+    persistReorder(boardId, destColumnId, token).then((result) => {
+      if (!result.ok) toast.error(result.error)
+    })
+    if (sourceColumnId !== destColumnId) {
+      persistReorder(boardId, sourceColumnId, token).then((result) => {
+        if (!result.ok) toast.error(result.error)
+      })
+    }
   }
 
   const isCurrentBoard = loadedBoardId === boardId

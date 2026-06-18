@@ -5,5 +5,16 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 5173
+  },
+  build: {
+    chunkSizeWarningLimit: 800,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vendor-three': ['three', 'vanta/dist/vanta.globe.min'],
+          'vendor-dnd': ['@hello-pangea/dnd']
+        }
+      }
+    }
   }
 })

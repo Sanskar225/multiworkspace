@@ -72,7 +72,7 @@ export default function PublicBoardPage() {
         <Globe2 className="h-8 w-8 text-ink-faint" />
         <h1 className="font-display text-xl font-semibold text-ink">This board isn't available</h1>
         <p className="max-w-sm text-sm text-ink-faint">{error || "It may have been made private, or the link is incorrect."}</p>
-        <Link to="/login" className="mt-1 text-sm font-medium text-jade-600 hover:underline">Sign in to Ledger</Link>
+        <Link to="/login" className="mt-1 text-sm font-medium text-azure-600 hover:underline">Sign in to Ledger</Link>
       </div>
     )
   }
@@ -82,7 +82,7 @@ export default function PublicBoardPage() {
       <header className="border-b border-ink/8 bg-surface">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 lg:px-6">
           <div className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-jade-500 font-display text-sm font-bold text-white">L</div>
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-azure-500 font-display text-sm font-bold text-white">L</div>
             <span className="font-display text-base font-semibold text-ink">Ledger</span>
           </div>
           <Link
@@ -95,7 +95,7 @@ export default function PublicBoardPage() {
       </header>
 
       <main className="mx-auto max-w-6xl px-4 py-8 lg:px-6">
-        <p className="flex items-center gap-1.5 text-sm font-medium text-jade-600">
+        <p className="flex items-center gap-1.5 text-sm font-medium text-azure-600">
           <Globe2 className="h-4 w-4" /> Publicly shared board · {board.workspaceName}
         </p>
         <h1 className="mt-1 font-display text-2xl font-semibold text-ink lg:text-3xl">{board.title}</h1>

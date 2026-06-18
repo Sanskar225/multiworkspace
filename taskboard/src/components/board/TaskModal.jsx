@@ -64,7 +64,7 @@ export default function TaskModal({ open, onClose, task, defaultColumnId, column
             autoFocus
             value={draft.title}
             onChange={(e) => setDraft((d) => ({ ...d, title: e.target.value }))}
-            className="w-full rounded-lg border border-ink/15 px-3 py-2 text-sm text-ink outline-none ring-jade-500/40 focus:ring-2"
+            className="w-full rounded-lg border border-ink/15 px-3 py-2 text-sm text-ink outline-none ring-azure-500/40 focus:ring-2"
             placeholder="What needs to get done?"
           />
         </div>
@@ -75,7 +75,7 @@ export default function TaskModal({ open, onClose, task, defaultColumnId, column
             value={draft.description}
             onChange={(e) => setDraft((d) => ({ ...d, description: e.target.value }))}
             rows={3}
-            className="w-full resize-none rounded-lg border border-ink/15 px-3 py-2 text-sm text-ink outline-none ring-jade-500/40 focus:ring-2"
+            className="w-full resize-none rounded-lg border border-ink/15 px-3 py-2 text-sm text-ink outline-none ring-azure-500/40 focus:ring-2"
             placeholder="Add more detail (optional)"
           />
         </div>
@@ -86,7 +86,7 @@ export default function TaskModal({ open, onClose, task, defaultColumnId, column
             <select
               value={draft.columnId}
               onChange={(e) => setDraft((d) => ({ ...d, columnId: e.target.value }))}
-              className="w-full rounded-lg border border-ink/15 px-3 py-2 text-sm text-ink outline-none ring-jade-500/40 focus:ring-2"
+              className="w-full rounded-lg border border-ink/15 px-3 py-2 text-sm text-ink outline-none ring-azure-500/40 focus:ring-2"
             >
               {columns.map((c) => (
                 <option key={c.id} value={c.id}>{c.title}</option>
@@ -98,7 +98,7 @@ export default function TaskModal({ open, onClose, task, defaultColumnId, column
             <select
               value={draft.priority}
               onChange={(e) => setDraft((d) => ({ ...d, priority: e.target.value }))}
-              className="w-full rounded-lg border border-ink/15 px-3 py-2 text-sm capitalize text-ink outline-none ring-jade-500/40 focus:ring-2"
+              className="w-full rounded-lg border border-ink/15 px-3 py-2 text-sm capitalize text-ink outline-none ring-azure-500/40 focus:ring-2"
             >
               {PRIORITIES.map((p) => (
                 <option key={p} value={p}>{p}</option>
@@ -112,7 +112,7 @@ export default function TaskModal({ open, onClose, task, defaultColumnId, column
           <select
             value={draft.assigneeId}
             onChange={(e) => setDraft((d) => ({ ...d, assigneeId: e.target.value }))}
-            className="w-full rounded-lg border border-ink/15 px-3 py-2 text-sm text-ink outline-none ring-jade-500/40 focus:ring-2"
+            className="w-full rounded-lg border border-ink/15 px-3 py-2 text-sm text-ink outline-none ring-azure-500/40 focus:ring-2"
           >
             <option value="">Unassigned</option>
             {members.map((m) => (

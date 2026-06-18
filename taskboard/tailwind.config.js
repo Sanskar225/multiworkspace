@@ -5,22 +5,22 @@ export default {
     extend: {
       colors: {
         paper: {
-          DEFAULT: '#EEF1EF',
-          dim: '#E4E8E5'
+          DEFAULT: '#EEF1F5',
+          dim: '#E3E8EF'
         },
         ink: {
-          DEFAULT: '#15231F',
-          soft: '#3C4A45',
-          faint: '#7C8884'
+          DEFAULT: '#141C2B',
+          soft: '#3B4A60',
+          faint: '#7C8AA0'
         },
         surface: '#FFFFFF',
-        jade: {
-          50: '#EAF3F0',
-          100: '#CFE5DD',
-          300: '#7FB3A2',
-          500: '#2F6F62',
-          600: '#255A50',
-          700: '#1C453E'
+        azure: {
+          50: '#EAF1F8',
+          100: '#CFE0F0',
+          300: '#7FAAD0',
+          500: '#2C5F8A',
+          600: '#234D70',
+          700: '#1B3B57'
         },
         brass: {
           100: '#F3E7CE',
@@ -35,8 +35,12 @@ export default {
           600: '#A8481E'
         },
         moss: {
+          50: '#EAF3E4',
+          100: '#CFE5C0',
+          300: '#8FB87A',
           400: '#6E9461',
-          500: '#4F7942'
+          500: '#4F7942',
+          600: '#3F6135'
         }
       },
       fontFamily: {
@@ -45,12 +49,12 @@ export default {
         mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace']
       },
       boxShadow: {
-        card: '0 1px 2px rgba(21,35,31,0.06), 0 1px 1px rgba(21,35,31,0.04)',
-        lift: '0 8px 24px rgba(21,35,31,0.12)',
-        rail: 'inset 1px 0 0 rgba(21,35,31,0.08)'
+        card: '0 1px 2px rgba(20,28,43,0.06), 0 1px 1px rgba(20,28,43,0.04)',
+        lift: '0 8px 24px rgba(20,28,43,0.12)',
+        rail: 'inset 1px 0 0 rgba(20,28,43,0.08)'
       },
       backgroundImage: {
-        'dot-grid': 'radial-gradient(circle, rgba(21,35,31,0.10) 1px, transparent 1px)'
+        'dot-grid': 'radial-gradient(circle, rgba(20,28,43,0.10) 1px, transparent 1px)'
       },
       backgroundSize: {
         'dot-grid': '16px 16px'

@@ -5,11 +5,13 @@ import GLOBE from 'vanta/dist/vanta.globe.min'
 /**
  * Animated globe backdrop for the login screen, built on Vanta.js + three.js.
  *
- * Colors are pulled from the app's own palette (ink/jade/brass) rather than
- * Vanta's stock pink-on-purple preset, so the one "marketing moment" in the
- * app still reads as the same product, not a stock effect bolted on. A globe
- * also isn't arbitrary here: it's a literal nod to "multiple workspaces,
- * one connected team."
+ * Colors are pulled from the app's own palette (navy ink, azure blue, brass
+ * gold) rather than Vanta's stock pink-on-purple preset, so the one
+ * "marketing moment" in the app still reads as the same product, not a
+ * stock effect bolted on. A globe also isn't arbitrary here: it's a literal
+ * nod to "multiple workspaces, one connected team" - and the navy/brass
+ * combination leans into a nautical-chart feel that a blue brand color pairs
+ * naturally with.
  *
  * Respects prefers-reduced-motion by simply not mounting the effect - the
  * login card still renders against the plain ink background in that case.
@@ -32,9 +34,9 @@ export default function VantaBackground({ className }) {
       minWidth: 200.0,
       scale: 1.0,
       scaleMobile: 1.0,
-      backgroundColor: 0x0f1f1b,
+      backgroundColor: 0x0a1322,
       color: 0xc9a66b,
-      color2: 0x2f6f62,
+      color2: 0x3d77a8,
       size: 1.05
     })
 

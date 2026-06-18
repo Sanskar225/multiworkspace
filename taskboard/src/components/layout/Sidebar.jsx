@@ -39,14 +39,14 @@ function BoardsList({ onNavigate }) {
             className={({ isActive }) =>
               clsx(
                 'flex items-center gap-2 rounded-lg px-3 py-2 text-sm transition-colors',
-                isActive ? 'bg-jade-50 font-medium text-jade-700' : 'text-ink-soft hover:bg-ink/5'
+                isActive ? 'bg-azure-50 font-medium text-azure-700' : 'text-ink-soft hover:bg-ink/5'
               )
             }
           >
             <LayoutGrid className="h-4 w-4 shrink-0" />
             <span className="truncate">{board.title}</span>
             {board.isPublic ? (
-              <Globe2 className="ml-auto h-3.5 w-3.5 shrink-0 text-jade-500" />
+              <Globe2 className="ml-auto h-3.5 w-3.5 shrink-0 text-azure-500" />
             ) : (
               <Lock className="ml-auto h-3.5 w-3.5 shrink-0 text-ink-faint" />
             )}
@@ -65,7 +65,7 @@ function SidebarContents({ onNavigate }) {
         onClick={() => navigate('/workspaces')}
         className="flex items-center gap-2 text-left"
       >
-        <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-jade-500 font-display text-sm font-bold text-white">L</div>
+        <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-azure-500 font-display text-sm font-bold text-white">L</div>
         <span className="font-display text-base font-semibold text-ink">Ledger</span>
       </button>
 

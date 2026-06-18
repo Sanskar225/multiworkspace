@@ -212,10 +212,13 @@ export const useBoardStore = create((set, get) => ({
     const orderedIds = get().taskIdsByColumn[columnId] || []
     try {
       await api.reorderTasks(boardId, columnId, orderedIds, token)
-    } catch {
+      return { ok: true }
+    } catch (err) {
       // A failed reorder persist is low-stakes for a demo app: the next poll
-      // reconciles order from the server. We avoid a disruptive rollback
-      // here since the drag gesture already completed from the user's view.
+      // reconciles order from the server, so we don't roll back the drag
+      // gesture itself. We do still report the failure so the caller can
+      // surface it (e.g. a toast) instead of failing completely silently.
+      return { ok: false, error: err.message || 'Could not save the new order.' }
     }
   },
 

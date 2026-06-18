@@ -7,9 +7,9 @@ import { timeAgo } from '../../utils/time'
 
 const PRIORITY_TONE = { high: 'high', medium: 'medium', low: 'low' }
 
-export default function TaskCard({ task, index, assignee, onOpen, isSaving }) {
+export default function TaskCard({ task, index, assignee, onOpen, isSaving, dragDisabled }) {
   return (
-    <Draggable draggableId={task.id} index={index}>
+    <Draggable draggableId={task.id} index={index} isDragDisabled={dragDisabled}>
       {(provided, snapshot) => (
         <div
           ref={provided.innerRef}
@@ -18,8 +18,8 @@ export default function TaskCard({ task, index, assignee, onOpen, isSaving }) {
           onClick={() => onOpen(task)}
           className={clsx(
             'group mb-2.5 cursor-pointer rounded-xl border border-ink/8 bg-white p-3.5 shadow-card transition-shadow',
-            'hover:border-jade-300/60 hover:shadow-lift',
-            snapshot.isDragging && 'rotate-1 shadow-lift ring-2 ring-jade-300/60',
+            'hover:border-azure-300/60 hover:shadow-lift',
+            snapshot.isDragging && 'rotate-1 shadow-lift ring-2 ring-azure-300/60',
             task._optimistic && 'opacity-70'
           )}
         >

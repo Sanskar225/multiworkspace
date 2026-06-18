@@ -62,14 +62,14 @@ export default function BoardsListPage() {
               <button
                 key={board.id}
                 onClick={() => navigate(`/workspace/${currentWorkspaceId}/board/${board.id}`)}
-                className="group flex flex-col items-start gap-2 rounded-2xl border border-ink/8 bg-surface p-5 text-left shadow-card transition-all hover:-translate-y-0.5 hover:border-jade-300/60 hover:shadow-lift"
+                className="group flex flex-col items-start gap-2 rounded-2xl border border-ink/8 bg-surface p-5 text-left shadow-card transition-all hover:-translate-y-0.5 hover:border-azure-300/60 hover:shadow-lift"
               >
                 <div className="flex w-full items-center justify-between">
-                  <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-jade-50 text-jade-600">
+                  <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-azure-50 text-azure-600">
                     <LayoutGrid className="h-4 w-4" />
                   </div>
                   {board.isPublic ? (
-                    <span className="flex items-center gap-1 text-xs font-medium text-jade-600">
+                    <span className="flex items-center gap-1 text-xs font-medium text-azure-600">
                       <Globe2 className="h-3.5 w-3.5" /> Public
                     </span>
                   ) : (
@@ -85,7 +85,7 @@ export default function BoardsListPage() {
                 {board.isPublic && (
                   <span
                     onClick={(e) => copyPublicLink(e, board.id)}
-                    className="mt-1 flex items-center gap-1 text-xs font-medium text-jade-600 hover:underline"
+                    className="mt-1 flex items-center gap-1 text-xs font-medium text-azure-600 hover:underline"
                   >
                     <Link2 className="h-3.5 w-3.5" /> {copiedId === board.id ? 'Link copied!' : 'Copy public link'}
                   </span>

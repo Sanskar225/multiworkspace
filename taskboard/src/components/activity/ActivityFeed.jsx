@@ -67,7 +67,7 @@ export default function ActivityFeed({ workspaceId, open, onClose }) {
     >
       <div className="flex h-16 items-center justify-between border-b border-ink/8 px-4">
         <div className="flex items-center gap-2">
-          <Radio className={`h-4 w-4 text-jade-500 ${pulse ? 'animate-pulse' : ''}`} />
+          <Radio className={`h-4 w-4 text-azure-500 ${pulse ? 'animate-pulse' : ''}`} />
           <h2 className="font-display text-sm font-semibold text-ink">Activity</h2>
         </div>
         <button onClick={onClose} className="rounded-md p-1.5 text-ink-faint hover:bg-ink/5 lg:hidden" aria-label="Close activity">

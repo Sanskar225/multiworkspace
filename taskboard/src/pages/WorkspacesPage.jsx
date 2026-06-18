@@ -23,7 +23,7 @@ export default function WorkspacesPage() {
     <div className="min-h-screen bg-paper">
       <header className="flex items-center justify-between border-b border-ink/8 bg-surface px-6 py-4">
         <div className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-jade-500 font-display text-sm font-bold text-white">L</div>
+          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-azure-500 font-display text-sm font-bold text-white">L</div>
           <span className="font-display text-base font-semibold text-ink">Ledger</span>
         </div>
         <div className="flex items-center gap-3">
@@ -47,9 +47,9 @@ export default function WorkspacesPage() {
                 <button
                   key={w.id}
                   onClick={() => openWorkspace(w)}
-                  className="group flex flex-col items-start gap-3 rounded-2xl border border-ink/8 bg-surface p-5 text-left shadow-card transition-all hover:-translate-y-0.5 hover:border-jade-300/60 hover:shadow-lift"
+                  className="group flex flex-col items-start gap-3 rounded-2xl border border-ink/8 bg-surface p-5 text-left shadow-card transition-all hover:-translate-y-0.5 hover:border-azure-300/60 hover:shadow-lift"
                 >
-                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-jade-50 text-jade-600">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-azure-50 text-azure-600">
                     <Building2 className="h-5 w-5" />
                   </div>
                   <div>

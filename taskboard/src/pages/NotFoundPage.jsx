@@ -9,7 +9,7 @@ export default function NotFoundPage() {
       <Compass className="h-8 w-8 text-ink-faint" />
       <h1 className="font-display text-xl font-semibold text-ink">Page not found</h1>
       <p className="max-w-sm text-sm text-ink-faint">The page you're looking for doesn't exist, or you may not have access to it.</p>
-      <Link to="/" className="mt-2 text-sm font-medium text-jade-600 underline-offset-2 hover:underline">
+      <Link to="/" className="mt-2 text-sm font-medium text-azure-600 underline-offset-2 hover:underline">
         Go back home
       </Link>
     </div>

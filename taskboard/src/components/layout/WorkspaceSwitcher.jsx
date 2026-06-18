@@ -32,7 +32,7 @@ export default function WorkspaceSwitcher() {
         className="flex w-full items-center justify-between gap-2 rounded-lg border border-ink/10 bg-white px-3 py-2 text-left shadow-card transition-colors hover:border-ink/20"
       >
         <div className="flex items-center gap-2 overflow-hidden">
-          <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-jade-500 font-display text-xs font-bold text-white">
+          <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-azure-500 font-display text-xs font-bold text-white">
             {currentWorkspace.name.slice(0, 1)}
           </div>
           <span className="truncate font-display text-sm font-semibold text-ink">{currentWorkspace.name}</span>
@@ -50,7 +50,7 @@ export default function WorkspaceSwitcher() {
               className="flex w-full items-center justify-between gap-2 px-3 py-2 text-left text-sm text-ink hover:bg-paper"
             >
               <span className="truncate">{w.name}</span>
-              {w.id === currentWorkspace.id && <Check className="h-4 w-4 text-jade-500" />}
+              {w.id === currentWorkspace.id && <Check className="h-4 w-4 text-azure-500" />}
             </button>
           ))}
         </div>

@@ -31,7 +31,7 @@ export default function TopBar({ onOpenMobileMenu, onToggleActivity, activityOpe
         <button
           onClick={onToggleActivity}
           className={`hidden items-center gap-1.5 rounded-lg border px-3 py-1.5 text-sm font-medium transition-colors sm:flex ${
-            activityOpen ? 'border-jade-500 bg-jade-50 text-jade-700' : 'border-ink/10 text-ink-soft hover:bg-ink/5'
+            activityOpen ? 'border-azure-500 bg-azure-50 text-azure-700' : 'border-ink/10 text-ink-soft hover:bg-ink/5'
           }`}
         >
           <Radio className="h-3.5 w-3.5" />

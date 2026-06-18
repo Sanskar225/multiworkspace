@@ -2,7 +2,7 @@ import clsx from 'clsx'
 import { Loader2 } from 'lucide-react'
 
 const VARIANTS = {
-  primary: 'bg-jade-500 text-white hover:bg-jade-600 focus-visible:ring-jade-500',
+  primary: 'bg-azure-500 text-white hover:bg-azure-600 focus-visible:ring-azure-500',
   secondary: 'bg-white text-ink border border-ink/15 hover:bg-paper focus-visible:ring-ink/30',
   ghost: 'bg-transparent text-ink-soft hover:bg-ink/5 focus-visible:ring-ink/20',
   danger: 'bg-white text-ember-600 border border-ember-400/40 hover:bg-ember-100 focus-visible:ring-ember-400'
